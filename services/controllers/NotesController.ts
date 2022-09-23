@@ -7,7 +7,7 @@ class NotesController {
         try{
             res.status(200).json(Notes.findAll());
         }catch (e) {
-            res.status(400).json({message:"Error: Can't delete notes"});
+            res.status(400).json({message:"Error: Can't get notes"});
         }
     }
     public getOne(req: Request, res: Response, next:any) {
